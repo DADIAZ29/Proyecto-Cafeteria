@@ -62,3 +62,44 @@ button:hover {
   border-radius: 8px;
 }
 
+#productos {
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos */
+  justify-content: center; /* Centra los elementos en horizontal */
+  flex-wrap: wrap; /* Evita que se salgan y los coloca abajo si no caben */
+  padding: 20px;
+  border: 2px solid  #fffbe6;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+
+#productos div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+#carrito {
+  width: 330px;
+  margin: 20px auto;
+  border: 2px dashed  #fffbe6;
+  padding: 10px;
+  background-color: #fffbe6;
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+
+#totalCompra {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+
+

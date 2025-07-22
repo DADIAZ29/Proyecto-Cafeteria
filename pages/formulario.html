@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> 
    <link rel="stylesheet" href="../css/formulario.css">
-   <link rel="stylesheet" href="../js/formulario.js">
    
 
     <title>Formulario</title>
@@ -70,6 +69,44 @@
 </nav>
 <br>
 
+<!--CARRITO DE COMPRAS-->
+
+<h2>Carrito de Compras</h2>
+<br>
+    <div id="productos">
+    <div>
+      <img src="https://sailorcoffee.com/wp-content/uploads/2021/06/sailorcoffee-1019.jpg" alt="Tortilla" width="100px" height="100px"/>
+      <p>Tortilla de Verde</p>
+      <button id="botonTortilla">Agregar</button>
+    </div>
+
+    <div>
+      <img src="https://sailorcoffee.com/wp-content/uploads/2021/06/sailorcoffee-1030.jpg" alt="Huevo" width="100px" height="100px"/>
+      <p>Huevos Benidictinos</p>
+      <button id="botonHuevo">Agregar</button>
+    </div>
+
+    <div>
+      <img src="https://sailorcoffee.com/wp-content/uploads/2021/06/sailorcoffee-1002.jpg" alt="Arepa" width="100px" height="100px"/>
+      <p>Arepas</p>
+      <button id="botonArepa">Agregar</button>
+    </div>
+
+    <div>
+      <img src="https://sailorcoffee.com/wp-content/uploads/2021/06/sailorcoffee-1064.jpg" alt="montubio" width="100px" height="100px"/>
+      <p>El montubio</p>
+      <button id="botonMontubio">Agregar</button>
+    </div>
+
+  <ul id="carrito">
+    
+  </ul>
+  <p id="totalCompra">Total: $0.00</p>
+  </div>
+  <br>
+
+
+
 <!--Creacion de formulario-->
 <div class="container">
     <h1>Solicitud de Pedido</h1>
@@ -90,7 +127,7 @@
       <input type="text" id="direccion" placeholder="Direccion" required>
 
       <label>Productos solicitados:</label>
-      <textarea id="productos" rows="3" required></textarea>
+      <textarea id="productosSeleccionados" rows="3" required></textarea>
 
       <label>Forma de pago:</label>
       <select id="pago" required>
@@ -132,8 +169,13 @@
     </div>
 </footer>
 
-
+  <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 
   <script src="../js/formulario.js"></script>
+    <script src="../js/carrito.js"></script>
+
+
 </body>
 </html>

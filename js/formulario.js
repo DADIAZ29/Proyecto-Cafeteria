@@ -1,3 +1,4 @@
+
 document.getElementById("cafe-form").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -6,7 +7,7 @@ document.getElementById("cafe-form").addEventListener("submit", (event) => {
   const telefono = document.getElementById("telefono").value;
   const correo = document.getElementById("correo").value;
   const direccion = document.getElementById("direccion").value;
-  const productos = document.getElementById("productos").value;
+  const productos = document.getElementById("productosSeleccionados").value;
   const pago = document.getElementById("pago").value;
   const monto = document.getElementById("monto").value;
 
